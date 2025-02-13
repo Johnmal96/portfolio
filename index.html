@@ -434,11 +434,18 @@
           </tr>
           <tr>
             <td>
-              <p class="signature">Coded with ♥ by John Maliszewski 2025 ©</p>
+              <p class="signature">Coded with ♥ by John Maliszewski <span id="current-year"></span> ©</p>
             </td>
           </tr>
         </table>
       </div>
     </div>
+    <script>
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+      
+      // Set the current year in the footer
+      document.getElementById('current-year').textContent = currentYear;
+    </script>
   </body>
 </html>
